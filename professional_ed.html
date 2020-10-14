@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./resources/CSS/style.css" type="text/css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+        </style>
+    </head>
+    <body>
+        <header id="nav_header">
+            <ul class="header_ul">
+                <li><a id = "nav_home" href="home.html">Home</a></li>
+                <li><a id="nav_contact" href="https://www.linkedin.com/in/mark-meardon-a65a7310b/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </header>
+
+        <nav>
+            <div class = "nav_button">
+                <button><d1>Professional</d1><img src = "./resources/assets/Dropdown.svg"></button>
+                <ul>
+                    <li><a href = "freelance-graphicDesign.html"><d1>Freelance</d1></a></li>
+                    <li><a href="professional_ed.html"><d1>Professional</d1></a></li>
+                </ul>
+                <br>
+            </div>
+            <div class = "nav_button">
+                <button><d2>Federal Student Loans App</d2><img src = "./resources/assets/Dropdown.svg"></button>
+                <ul>
+                    <li><a href = "professional_sibn.html"><d2>Cross-Agency Internal Product</d2></a></li>
+                    <li><a href = "professional_ed.html"><d2>Federal Student Loans App (this screen)</d2></a></li>
+                </ul>
+                <br></br>
+            </div>
+        </nav>
+        <!-- Role and Mission -->
+        <div class = "project_label">Note</div>
+        <span><p2>Due to the contents of the project, I cannot provide specificities in my descriptions or accompanied </p2><p2 id = "jackieText">images.</p2></span>
+        <img id = "jackie" src = "resources/assets/professional/ed/jackie.gif">
+
+        <div class = "brief">
+            <div class = "project_label">Project Role</div>
+            <p2>UX Designer <br> Design Researcher</p2>
+            <br>
+            <br>
+            <div class = "project_label">Mission</div>
+            <p>Design the core FSA website’s fuctionailties into a standalone app experience.</p>
+        </div>
+        <!-- Content -->
+        <div class = "professional_section">
+            <h1>UX Design</h1>
+            <p2>My primary responsibility was to translate existing web designs into a native app, supporting Android and iOS.  Microinterations were rethought and redesigned to follow best practices for a mobile-first touch interface. This alternate perspective, where screen real estate is at a premium, allowed us to reconsider and simplify desktop web designs.</p2>
+            <div class = "relative">
+                <div class = "siema1">
+                    <img src = "resources/assets/professional/ed/UX_0.png">
+                    <img src = "resources/assets/professional/ed/UX_1.png">
+                    <img src = "resources/assets/professional/ed/UX_3.png">
+                    <img src = "resources/assets/professional/ed/UX_4.png">
+                </div>
+                <button class="prev1"><span class = "fa"> arrow-left</span></button>
+                <button class="next1"><span class = "fa"> arrow-right</span></button>
+            </div>
+        </div>
+        <div class = "professional_section">
+            <h1>Research</h1>
+            <p2>Whenever possible, we pushed our client to support usability testing to evaluate the efficacy of our designs. I built a usability testing guide, led virtual interviews, and synthesized the aggregated data into actionable takeaways and insights for key stakeholders.</p2>
+            <div class = "relative">
+                <div class = "siema2">
+                    <img src = "resources/assets/professional/ed/Research_1.png">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class = "professional_section">
+            <h1>Design System</h1>
+            <p2>As one of the first designers on the mobile app, I contributed to fleshing out the mobile app design system as it was translated from the orignial web design system. With different platforms and use cases comes new directions to take the design system. Over time, I identified areas of friction when translating to the build, and helped realign the design system to technical feasability alongside developers.</p2>
+            
+            <div class = "relative">
+                <div class = "siema3">
+                    <img src = "./resources/assets/professional/ed/DesignSystem_1.png">
+                </div>
+            </div>
+        </div>
+        <script src = "./script_ed.js"></script>
+        <script src="./siema-master/dist/siema.min1.js"></script>
+        <script src="./siema-master/dist/siema.min2.js"></script>
+        <script src="./siema-master/dist/siema.min3.js"></script>
+        <script>
+            const mySiema1 = new Siema1({loop: true});
+            const mySiema2 = new Siema2();
+            const mySiema3 = new Siema3();
+            document.querySelector('.prev1').addEventListener('click', () => mySiema1.prev());
+            document.querySelector('.next1').addEventListener('click', () => mySiema1.next());
+        </script>
+    </body>
+</html>
