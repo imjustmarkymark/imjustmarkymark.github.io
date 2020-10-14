@@ -172,11 +172,10 @@ icon {
 /* Bio + Name */
 
 .header_background {
-    margin: -10rem -999rem 0 -999rem;
+    /* margin: -10rem -999rem 0 -999rem;
     padding:  20rem 999rem 20rem 999rem;
     background-color: rgb(36, 24, 80);
-    color: white;
-    
+    color: white; */
 }
 
 #intro_wrapper {
