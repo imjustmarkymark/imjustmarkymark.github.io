@@ -62,15 +62,15 @@
                     <img src = "resources/assets/professional/internal/UX_sketch_blurred.png">
                     <img src = "resources/assets/professional/internal/UX_high-fidelity_design_blurred.jpg">
                 </div>
-                <button class="prev3"></button>
+                <button class="prev3"  id="test"></button>
                 <button class="next3"></button>    
             </div>
 
             <div class="slide_wrapper">
-                <span class="slide"></span>
-                <span class="slide"></span>
-                <span class="slide"></span>
-                <span class="slide"></span>
+                <span class="slide" id="slide_one"></span>
+                <span class="slide" id="slide_two"></span>
+                <span class="slide" id="slide_three"></span>
+                <span class="slide" id="slide_four"></span>
             </div>
         </div>
         <div class = "professional_section">
@@ -103,11 +103,12 @@
                 </div>
             </div>
         </div>
-        <script src = "./script_sibn.js"></script>
+
         <script src="./siema-master/dist/siema.min1.js"></script>
         <script src="./siema-master/dist/siema.min2.js"></script>
         <script src="./siema-master/dist/siema.min3.js"></script>
         <script src="./siema-master/dist/siema.min4.js"></script>
+        <script src = "./script_sibn.js"></script>
         <script>
             const mySiema1 = new Siema1();
             const mySiema2 = new Siema2({loop: true});
