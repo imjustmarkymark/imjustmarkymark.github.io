@@ -1,12 +1,12 @@
 // Frodo Hover easter egg
-document.getElementById('frodoText').addEventListener("mouseover", frodoIn);
-document.getElementById('frodoText').addEventListener("mouseout", frodoOut);
-function frodoIn() {
-       document.getElementById('frodo').style.visibility = "visible";
-}
-function frodoOut() {
-       document.getElementById('frodo').style.visibility = "hidden";
-}
+// document.getElementById('frodoText').addEventListener("mouseover", frodoIn);
+// document.getElementById('frodoText').addEventListener("mouseout", frodoOut);
+// function frodoIn() {
+//        document.getElementById('frodo').style.visibility = "visible";
+// }
+// function frodoOut() {
+//        document.getElementById('frodo').style.visibility = "hidden";
+// }
 
  // Header Shadow
 document.addEventListener('scroll', addShadow);
@@ -24,10 +24,10 @@ function addShadow() {
 //Carousel slide indicator
 // document.getElementById('test').addEventListener('click', highlightSlide);
 // function highlightSlide() {
-//        if(parent.currentSlide == 0) {
+//        if(Siema1.currentSlide == 0) {
 //               document.querySelector('#slide_one').style.opacity = "1.0";
 //        }
-//        else if(currentSlide == 1) {
+//        else if(Siema1.currentSlide == 1) {
 //               document.querySelector('#slide_one').style.opacity = "1.0";
 //        }
 // }
