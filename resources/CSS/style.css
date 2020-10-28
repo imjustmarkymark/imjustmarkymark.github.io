@@ -179,7 +179,7 @@ icon {
 
 .intro {
     max-width: 1000px;
-    min-width: 350px;
+    min-width: 250px;
 }
 
 
@@ -189,7 +189,7 @@ icon {
     overflow: hidden;
     position: relative;
     top: 50px;
-    width: 530px;
+    max-width: 530px;
 }
 
 .intro d2 {
@@ -582,6 +582,29 @@ br {
         margin-left: 0px;
     }
 
+    #professional {
+        background-color: #c6d3ff;
+        border-radius: 0px;
+        padding: 50px;
+        margin: 200px -24px 0px -24px;
+        /* width: 100%; */
+        position: relative;
+        /* right: 24px; */
+        min-height: min-content;
+    }
+
+    #professional_cards {
+        position: relative;
+        bottom: 200px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 578px) {
+    .intro img {
+
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -595,6 +618,13 @@ br {
 
     .album img {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 936px) {
+    .intro d2 {
+        position: relative;
+        top: 50px;
     }
 }
 
