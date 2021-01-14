@@ -10,3 +10,17 @@
 //         document.querySelector('#slide_one').innerHTML = "<h2>"+this.currentSlide+"</h2>.";
 //     }
 // }
+
+document.getElementById('test').addEventListener('click', highlightSlide);
+function highlightSlide() {
+    // if (this.currentSlide == 0) {
+    //     document.querySelector('#slide_one').style.opacity = "1.0";
+    // }
+    document.querySelector('#slide_number').innerHTML = currentSlideNumber;
+
+}
+
+let currentSlideNumber = this.currentSlide;
+if (currentSlideNumber < 0) {
+  currentSlideNumber = this.innerElements.length + currentSlideNumber;
+}
