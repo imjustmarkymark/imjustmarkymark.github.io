@@ -11,7 +11,7 @@ var animation = bodymovin.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'bodymovin_test2.json'
+    path: 'selfie.json'
 })
 
 document.getElementById('js_test').innerHTML = "testing JS success. 2!";
