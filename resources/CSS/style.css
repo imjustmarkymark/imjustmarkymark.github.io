@@ -168,19 +168,10 @@ icon {
 
 /* Bio + Name */
 
-.header_background {
-    /* margin: -10rem -999rem 0 -999rem;
-    padding:  20rem 999rem 20rem 999rem;
-    background-color: rgb(36, 24, 80);
-    color: white; */
-}
-
 #home_video {
     width: 90%;
     margin: auto 5%;
-
 }
-
 
 .intro {
     max-width: 100%;
@@ -291,10 +282,6 @@ br .entry {
     margin: 200px 0px 0px 0px;
     max-width: 800px;
     min-height: min-content;
-}
-
-#professional d1, #professional p, #professional span {
-    /* color: #FAFAFA; */
 }
 
 .fa {
