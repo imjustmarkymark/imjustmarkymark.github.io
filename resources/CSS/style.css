@@ -379,7 +379,6 @@ br {
 .card .button {
     position: absolute;
     bottom: 16px;
-    right: 24px;
     text-align: right;
     vertical-align: text-bottom;
 }
