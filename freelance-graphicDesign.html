@@ -52,11 +52,26 @@
         <br></br>
         <br></br>
         <h2>Album Cover</h2>
+        <p>Check out album on <a href="https://open.spotify.com/album/4ZboKXz4UyA6CWfILDYBHp" target="_blank">Spotify</a>!</p>
         <div class = "album">
             <br></br>
-            <img src = "resources/assets/freelance/graphic_design/Early Shorts.png">
-        </div>
+            <!-- <img src = "resources/assets/freelance/graphic_design/Early Shorts.png"><div class = "relative"> -->
+            <div class="relative">
+                <div class = "siema1">
+                    <img src = "./resources/assets/freelance/graphic_design/EarlyShorts_thumbnail.jpg">
+                    <img src = "./resources/assets/freelance/graphic_design/EarlyShorts_TrayCardOutside.jpg">
+                    <img src = "./resources/assets/freelance/graphic_design/EarlyShorts_disc.jpg">
+                </div>
+                <button class="prev1"></button>
+                <button class="next1"></button>
+            </div>
+        <div class="footer"></div>
         <script src="./script_graphicdesign.js"></script>
+        <script src="./siema-master/dist/siema.min1.js"></script>
+        <script>
+            const mySiema1 = new Siema1({loop: true});
+            document.querySelector('.prev1').addEventListener('click', () => mySiema1.prev());
+            document.querySelector('.next1').addEventListener('click', () => mySiema1.next());
+        </script>
     </body>
-
 </html>

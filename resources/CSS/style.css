@@ -107,6 +107,10 @@ a {
     cursor: initial;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .project_label {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -118,6 +122,8 @@ icon {
     font-family: 'fa';
     font-size: 15px;
 }
+
+
 
 /* Header */
 #nav_header {
@@ -164,6 +170,11 @@ icon {
     float: right; 
     /* right: 24px;
     padding-right: 24px; */
+}
+
+/* Footer */
+.footer {
+    margin-bottom: 100px;;
 }
 
 /* Bio + Name */
