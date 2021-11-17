@@ -107,7 +107,7 @@ a {
     cursor: initial;
 }
 
-a:hover {
+p a:hover {
     text-decoration: underline;
 }
 
@@ -365,6 +365,21 @@ br {
     width: 16px;
 }
 
+.card_disabled {
+    position: relative;
+    right: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    padding: 20px;
+    color: #fafafa;
+    margin: 20px 20px;
+}
+
+.card_disabled h2 {
+    padding-bottom: 20px;
+}
+
 #one {
     background-color: #0E784B;
     cursor: url('https://static.wixstatic.com/media/d86011_21017f45f11a48cfb89e9a22eace3c91~mv2.png') 40 40, pointer;
@@ -375,8 +390,9 @@ br {
 }
 
 #three {
-    
-    background-color: #11708D;
+    border: 3px solid rgb(196, 196, 196);
+    color: black;
+    background-color: #f0f0f0;
 }
 
 #four {
