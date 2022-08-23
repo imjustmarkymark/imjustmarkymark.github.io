@@ -222,7 +222,7 @@ icon {
 }
 
 .list .scroll-container {
-    grid-template-columns: min-content 7px 400px 100px min-content 400px 100px min-content 7px 400px 100px min-content 400px 100px min-content 400px 100px;
+    grid-template-columns: min-content 400px 100px min-content 7px 400px 100px min-content 400px 100px min-content 7px 400px 100px min-content 400px 100px min-content 400px 100px;
 }
 
 /* SCROLL BAR */
