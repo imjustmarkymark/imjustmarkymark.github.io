@@ -221,7 +221,7 @@ icon {
     overflow: auto;
     padding: 20px 0px;
 }
-/* This determines the sizing of the job list columns. */
+/* This determines the sizing of the job list columns, and keeps everything aligned */
 .list .scroll-container {
     grid-template-columns: min-content min-content 400px 100px min-content 7px 400px 100px min-content 400px 100px min-content 7px 400px 100px min-content 400px 100px min-content 400px 100px;
 }
