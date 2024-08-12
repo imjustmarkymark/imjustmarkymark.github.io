@@ -19,6 +19,7 @@ body {
     margin: 48px auto 0 auto;
     padding: 0 24px;
     overflow-x: hidden;
+    background-color: #CAE6FF;
 
     /* Kerning Fix */
     -moz-font-feature-settings: "liga", "kern";
@@ -84,7 +85,7 @@ h4 {
 
 h5 {
     font-size: 14px;
-    font-family: 'Graphic Web';
+    font-family: 'Graphik LC Web';
     font-weight: 700;
 }
 
@@ -220,9 +221,9 @@ icon {
     overflow: auto;
     padding: 20px 0px;
 }
-
+/* This determines the sizing of the job list columns */
 .list .scroll-container {
-    grid-template-columns: min-content 400px 100px min-content 7px 400px 100px min-content 400px 100px min-content 7px 400px 100px min-content 400px 100px min-content 400px 100px;
+    grid-template-columns: min-content min-content 400px 100px min-content 7px 400px 100px min-content 400px 100px min-content 7px 400px 100px min-content 400px 100px min-content 400px 100px;
 }
 
 /* SCROLL BAR */
@@ -600,6 +601,12 @@ br {
         margin-left: 0px;
     }
 
+@media only screen and (max-width: 700px) {
+    #initialtask_question {
+        left:0%;
+    }
+}
+
     #professional {
         background-color: #c6d3ff;
         border-radius: 0px;
@@ -618,6 +625,110 @@ br {
     }
 }
 
+/*Thrivent Page*/
+
+.intro_video {
+    margin: 48px 0em 0px;
+}
+
+#intro_video_background {
+    margin: 0em -200em;
+    padding: 40px 200em;
+    background-color: #D9D9D9;
+
+}
+
+.intro_video div {
+
+    gap: 40px;
+    /* padding-top: 24px; */
+  
+}
+#intro_video_container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+#paragraph_container {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+#vid_container {
+    flex-grow: 1;
+    min-width: 300px;
+}
+
+#vid_container2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.intro_video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#initialtask_container {
+    padding: 80px 0px;
+    margin: 96px auto;
+    width: fit-content;
+}
+
+#initialtask_question {
+    width: fit-content;
+    animation: question 2.0s ease-in-out alternate infinite;
+    position: relative;
+    left: 50%;
+    right: 10%;
+    margin-top: 10%;
+}
+
+#initialtask_question p {
+    text-wrap: wrap;
+}
+
+@keyframes question {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+/* Research section */
+
+#research_slides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 24px;
+    align-content: stretch;
+}
+
+.research_slide {
+    width: 250px;
+    display: block;
+}
+.research_slide > * {
+    margin: 24px 0;
+}
+.filler_image {
+    width: 250px;
+    height: 250px;
+    background-color: #D9D9D9;
+}
+
+/*Screen Size*/
 @media only screen and (max-width: 578px) {
     .intro img {
 
