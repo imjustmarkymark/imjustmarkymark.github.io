@@ -2,6 +2,8 @@
 <html>
     <head>
         <link href="/resources/CSS/style.css" type="text/css" rel="stylesheet">
+        <!-- Extra font: Roca -->
+        <link rel="stylesheet" href="https://use.typekit.net/une5rut.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
         </style>
@@ -42,15 +44,15 @@
 
                 <!--Video summary-->
                 <div class = "intro_video">
-                    <div id = "intro_video_background">
-                        <h1>Video Summary</h1>
-                        <br>
-                        <div id = "intro_video_container">
-                            <div id = "paragraph_container">
-                                <p>I created this video highilghting some of the key benefits of the design for our stakeholders.</p>
+                    <div class = "text_image_background">
+                        <d2>Video Summary</d2>
+                        <br></br>
+                        <div class = "text_image_container">
+                            <div class = "paragraph_container">
+                                <p>Check out this video I created for leadership highlighting some of the key benefits of my team's designs.</p>
                             </div>
-                            <div id = "vid_container">
-                                <div id = "vid_container2">
+                            <div class = "vid_container">
+                                <div class = "vid_container2">
                                     <iframe width="480" height="270" src="https://youtube.com/embed/yjBPuLhirKo" frameborder="0"></iframe>
                                 </div>
                             </div>
@@ -59,12 +61,16 @@
                 </div>
 
             <!--Initial task-->
-            <div id = "initialtask_container">
-                <div>
-                    <h4>Initial task:</h4>
-                    <d2>“Make the Life Insurance experience better”</d2>
+            <div class = "initialtask_container">
+                <div class="initialtask_topline">
+                    <img src="resources/assets/professional/thrivent/Rectangle 77.svg">
+                    <div class="h1_background">
+                        <h4>Initial task:</h4>
+                        <d2>“Make the Life Insurance experience better”</d2>
+                    </div>
                 </div>
                 <div id = "initialtask_question">
+                    <img src="resources/assets/professional/thrivent/Rectangle 77.svg">
                     <p>Okay... but what does that mean, exactly?</p>
                 </div>
             </div>
@@ -73,42 +79,190 @@
                 <h1>So we dove into research.</h1>
                 <div id = "research_slides">
                     <div class = "research_slide">
-                        <div class = "filler_image"></div>
+                        <div class = "filler_image"><img src="resources/assets/professional/thrivent/interviews2.gif"></div>
                         <h2>Interviews</h2>
                         <p>We interviewed dozens of Thrivent members, as well as people who signed up with other Insurance companies.</p>
                     </div>
                     <div class = "research_slide">
-                        <div class = "filler_image"></div>
+                        <div class = "filler_image"><img src="resources/assets/professional/thrivent/competitivanalysis2.gif"></div>
                         <h2>Competitive Analysis</h2>
-                        <p>There is a lot of competition, so we looked at how others stack up</p>
+                        <p>There is a lot of competition, so we looked at how others stack up.</p>
                     </div>
                     <div class = "research_slide">
-                        <div class = "filler_image"></div>
+                        <div class = "filler_image"><img src="resources/assets/professional/thrivent/heuristic.gif"></div>
                         <h2>Heuristic Analysis</h2>
-                        <p>We used existing best practices to identify where the current experience could improve</p>
+                        <p>We used existing best practices to identify where the current experience could improve.</p>
                     </div>
                 </div>
             </div>
-            <!--Text tests-->
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <d1>Text goes here, thanks.</d1>
-            <d2>Text goes here, thanks.</d2>
-            <h1>Text goes here, thanks.</h1>
-            <h2>Text goes here, thanks.</h2>
-            <h3>Text goes here, thanks.</h3>
-            <h4>Text goes here, thanks.</h4>
-            <h5>Text goes here, thanks.</h5>
-            <p>Text goes here, thanks.</p>
-            <p2>Text goes here, thanks.</p2>
-            <p2><strong>Text goes here, thanks.</strong></p2>
+            <div class="professional_section">
+                <h1>And synthesized our findings.</h1>
+                <div class="thrivent_section">
+                    <div class = "text_image_container mobile_swap">
+                        <div class = "vid_container mobile_swap">
+                            <div class = "vid_container2">
+                                <img src="/resources/assets/professional/thrivent/blueprint2.jpg">
+                            </div>
+                        </div>
+                        <div class = "paragraph_container">
+                            <p>We built a service design blueprint representing Thrivent's current Life Insurance touch-points. Assisted by our heuristic analysis and interviews with customers and employees, we had in-depth understanding of the process.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="professional_section">
+                        <div class = "text_image_container">
+                            <div class = "paragraph_container">
+                                <p>Combining our blueprint with competitive analyses, we found several areas for improvement, like:</p>
+                                <div class="bullet_wrapper">
+                                    <ul type="i" id="opportunity_bullets">
+                                        <li>Help financial advisors more effectively parse through applications</li>
+                                        <li>Enable paperless documentation</li>
+                                        <li>Improve communication lines between relevant parties</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class = "vid_container">
+                                <div class = "vid_container2">
+                                    <img src="/resources/assets/professional/thrivent/OpportunityAreas2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class = "initialtask_container">
+                <!-- <div class="professional_section"> -->
+                    <h1>In the end, our research + business priorities + team scope =</h1>
+                    <br></br>
+                    <div class="initialtask_topline">
+                        <img src="resources/assets/professional/thrivent/Rectangle 77.svg">
+                        <div class="h1_background">
+                            <d2>Digitize the Term Life Insurance application process</d2>
+                        </div>
+                    </div>
+                    <div id = "research_slides">
+                        <div class="solution_wrapper">
+                            <div class = "solution_feature" id="solution1">
+                                <p>Allow users to complete it on their own</p>
+                            </div>
+                        </div>
+                        <div class="solution_wrapper">
+                            <div class = "solution_feature" id="solution2">
+                                <p>Clarify confusing questions/instructions</p>
+                            </div>
+                        </div>
+                        <div class="solution_wrapper">
+                            <div class = "solution_feature" id="solution3">
+                                <p>Reduce the number of errors in applications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="professional_section">
+                    <d1>Here are some examples of the redesigned application process:</d1>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div class="example_set" id="example_set1">
+                        <h1 class="centered_text">Improved Expectation-Setting</h1>
+                        <div class="example before" id="before1">
+                            <h2>Before</h2>
+                            <div class="example_img_wrapper">
+                                <img src="/resources/assets/professional/thrivent/expectation_before4.gif">
+                            </div>
+                        </div>
+                        <div class="example after" id="after1">
+                            <h2>After</h2>
+                            <div class="example_img_wrapper">
+                                <img src="/resources/assets/professional/thrivent/expectation_after1.gif">
+                            </div>
+                        </div>
+                        <div class="example_text before_text" id="text_before1">
+                            <p>Links to fill out the form provided no contextual information (like duration of the application, additional materials needed, etc.), so financial advisors have to do the heavy lifting.</p>
+                        </div>
+                        <div class="example_text after_text" id="text_after1">
+                            <p>The new form starts with a landing screen that indicates important information before starting, like the expected duration, the topics of questions, what materials to have handy.</p>
+                            <br>
+                            <p>Additionally, we include helpful guidance on next steps after filling out the form.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="professional_section">
+                    <div class="example_set" id="example_set2">
+                        <h1 class="centered_text">User-friendly Order of Questions</h1>
+                        <div class="example before" id="before2">
+                            <h2>Before</h2>
+                            <div class="example_img_wrapper">
+                                <img src="/resources/assets/professional/thrivent/questionOrder_before2.gif">
+                            </div>
+                        </div>
+                        <div class="example after" id="after2">
+                            <h2>After</h2>
+                            <div class="example_img_wrapper">
+                                <img src="/resources/assets/professional/thrivent/questionOrder_after1.gif">
+                            </div>
+                        </div>
+                        <div class="example_text before_text" id="text_before2">
+                            <p>The original form asked particularly invasive questions early on, which can scare users away.</p>
+                        </div>
+                        <div class="example_text after_text" id="text_after2">
+                            <p>The new form is organized in three sections, starting with less-personal questions to ease users in.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="professional_section">
+                    <div class="example_set" id="example_set3">
+                        <h1 class="centered_text">Conditional Questions</h1>
+                        <div class="example before" id="before3">
+                            <h2>Before</h2>
+                            <div class="example_img_wrapper">
+                                <img src="/resources/assets/professional/thrivent/conditional_before2.gif">
+                            </div>
+                        </div>
+                        <div class="example after" id="after3">
+                            <h2>After</h2>
+                            <div class="example_img_wrapper">
+                                <img src="/resources/assets/professional/thrivent/conditional_after1.gif">
+                            </div>
+                        </div>
+                        <div class="example_text before_text" id="text_before3">
+                            <p>Some questions are only required based on previous questions’ responses. In the Docusign/paper experience, users had to read a lot of instructional text to determine which which questions are actually required.</p>
+                            <br>
+                            <p>Additionally, they needed to jump around on the form out of order to properly fill it out.</p>
+                        </div>
+                        <div class="example_text after_text" id="text_after3">
+                            <p>All the conditional logic is handled by the system, saving users from the added cognitive load of complicated instructional text. This also decreases errors, saving time for all parties.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="professional_section">
+                    <div class="example_set" id="example_set4">
+                        <h1 class="centered_text">Added Answer Validations</h1>
+                        <div class="example before" id="before4">
+                            <h2>Before</h2>
+                            <div class="example_img_wrapper">
+                                <img src="/resources/assets/professional/thrivent/validations_before2.gif">
+                            </div>
+                        </div>
+                        <div class="example after" id="after4">
+                            <h2>After</h2>
+                            <div class="example_img_wrapper">
+                                <img src="/resources/assets/professional/thrivent/validations_after1.gif">
+                            </div>
+                        </div>
+                        <div class="example_text before_text" id="text_before4">
+                            <p>The old version had no limitations how a user could answer a question, leading to common mistakes.</p>
+                            <br>
+                            <p>The only validation was for required questions, but couldn’t identify more complex errors.</p>
+                        </div>
+                        <div class="example_text after_text" id="text_after4">
+                            <p>In our new flow, questions have far more validations to ensure accurate reporting (such as accidentally entering a future date or a 13th month in a date field).</p>
+                            <br>
+                            <p>Some questions add dropdowns to limit options for easier completion by applicants and cleaner data for underwriters.</p>
+                        </div>
+                    </div>
+                </div>
                 <script src = "./script_thrivent.js"></script>
     </body>
 </html>

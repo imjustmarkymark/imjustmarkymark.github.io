@@ -73,8 +73,8 @@
                     <img src = "resources/assets/professional/internal/UX_sketch_blurred.png">
                     <img src = "resources/assets/professional/internal/UX_high-fidelity_design_blurred.jpg">
                 </div>
-                <button class="prev3"  id="test"></button>
-                <button class="next3"></button>    
+                <img class="arrow arrow_left" src="resources/assets/cursor_arrow_dark_left.png">
+                <img class="arrow arrow_right"  src="resources/assets/cursor_arrow_dark.png">   
             </div>
 
             
@@ -84,11 +84,11 @@
             <p2>As my team built up trust with the client, we were pulled in to discuss and eventually <strong>lead strategic conversations</strong> regarding the holistic purpose and direction of the Product. To accomplish these tasks, I <strong>facilitated working sessions and workshops</strong> with stakeholders, future customers, and clients to build a <strong>blueprint, journey map, roadmap, and more.</strong></p2>
             <div class="relative">
                 <div id = "service_design" class="siema2">
-                    <img src = "./resources/assets/professional/internal/SD_blueprint_2_blurred.png">
                     <img src = "./resources/assets/professional/internal/SD_journey_map_2_blurred.png"> 
+                    <img src = "./resources/assets/professional/internal/SD_blueprint_2_blurred.png">
                 </div>
-                <button class="prev1"></button>
-                <button class="next1"></button>
+                <img class="arrow arrow_left2" src="resources/assets/cursor_arrow_dark_left.png">
+                <img class="arrow arrow_right2"  src="resources/assets/cursor_arrow_dark.png">  
             </div>
         </div>
         <div class = "professional_section">
@@ -120,10 +120,10 @@
             const mySiema2 = new Siema2({loop: true});
             const mySiema3 = new Siema3({loop: true});
             const mySiema4 = new Siema4();
-            document.querySelector('.prev3').addEventListener('click', () => mySiema3.prev());
-            document.querySelector('.next3').addEventListener('click', () => mySiema3.next());
-            document.querySelector('.prev1').addEventListener('click', () => mySiema2.prev());
-            document.querySelector('.next1').addEventListener('click', () => mySiema2.next());
+            document.querySelector('.arrow_left').addEventListener('click', () => mySiema3.prev());
+            document.querySelector('.arrow_right').addEventListener('click', () => mySiema3.next());
+            document.querySelector('.arrow_left2').addEventListener('click', () => mySiema2.prev());
+            document.querySelector('.arrow_right2').addEventListener('click', () => mySiema2.next());
           </script>
     </body>
 </html>
