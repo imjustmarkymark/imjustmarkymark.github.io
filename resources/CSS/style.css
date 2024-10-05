@@ -1,5 +1,5 @@
 * {
-    font-family: 'basic-sans', sans-serif;
+    font-family: "basic-sans", sans-serif;
     margin: 0;
 	padding: 0;
 	border: 0;
@@ -11,7 +11,7 @@
     /* background-color: white; */
     outline: none;
     color: black;
-
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Text styles */
@@ -45,9 +45,6 @@ d1 {
 
 d2 {    
     font-size: 38px;
-    /* font-family: 'Graphik Web';
-    font-weight: 200;
-    font-style: normal; */
     font-stretch: normal;
 
     font-family: "roca", sans-serif;
@@ -57,9 +54,7 @@ d2 {
 
 h1 {
     font-size: 31px;
-    /* font-family: 'Graphik LC Web';
-    font-weight: 600;
-    font-style: normal; */
+
     font-stretch: normal;
 
     font-family: "roca", sans-serif;
@@ -69,9 +64,6 @@ font-style: normal;
 
 h2 {
     font-size: 24px;
-    /* font-family: 'Graphik Web';
-    font-weight: 700;
-    font-style: normal; */
     font-stretch: normal;
 
     font-family: "roca", sans-serif;
@@ -81,9 +73,6 @@ h2 {
 
 h3 {
     font-size: 20px;
-    /* font-family: 'Graphik Web';
-    font-weight: 500;
-    font-style: normal; */
     font-stretch: normal;
 
     font-family: "roca", sans-serif;
@@ -123,21 +112,15 @@ p {
 }
 
 p2 {
-    /* font-family: 'Open Sans', sans-serif; */
     font-size: 14px;
-
     font-family: "basic-sans", sans-serif;
     /* font-family: "dolly-new", sans-serif; */
-/* 
-    font-family: "Lora", serif;
-    font-optical-sizing: auto; */
-
     font-weight: 400;
     font-style: normal;
 
 }
 
-p2 strong {
+strong {
     /* font-family: 'Open Sans', sans-serif; */
     font-weight: 700;
 }
@@ -159,9 +142,16 @@ ul li {
 }
 
 .project_label {
+
+    /* p2 formating */    
+    font-family: "basic-sans", sans-serif;
     font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    
     text-transform: uppercase;
-    color: #686868
+    color: #686868;
+
 }
 
 icon {
@@ -345,8 +335,7 @@ br .entry {
 
 
   /* Professional and Freelance Work Section */
-#professional {
-    background-color: #c6d3ff;
+.projects_section {
     border-radius: 71px;
     padding: 50px 50px 0px 50px;
     margin: 200px 0px 16px 0px;
@@ -364,20 +353,27 @@ br .entry {
     font-family: 'fa-light';
 }
 
-#professional p {
-    padding: 24px 0px 200px 0px;
+.projects_section p, .projects_section d1 {
+    color: #FFF;
+
+}
+
+.projects_section p {
+    padding: 24px 0px 2px 0px;
 } 
 
-#professional .button  {
+.projects_section .button  {
     text-align: right;
     font-family: 'Graphik Web';
     font-weight: 500;
 }
 
-#professional_cards {
-    position: relative;
-    bottom: 200px;
-    margin-left: 50px;
+#other_cool_stuff {
+    /* bottom: 500px; */
+}
+
+#other_cool_stuff_cards {
+    /* bottom: 1000px; */
 }
 
 br {
@@ -389,12 +385,33 @@ br {
     visibility: hidden;
 }
 
+#professional_background {
+    position:absolute;
+    z-index: -1;
+    background-color: #42524d;
+    border-radius: 71px;
+    height: 700px;
+    width: 100%;
+    margin: -50px 0px 16px -50px;
+}
 
+#other_stuff_background {
+    position:absolute;
+    z-index: -1;
+    background-color: #524252;
+    border-radius: 71px;
+    height: 360px;
+    width: 100%;
+    margin: -50px 0px 16px -50px;
+}
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     max-width: 660px;
+    position: relative;
+    /* bottom: 500px; */
+    margin-left: 50px;
 }
 
 .card {
@@ -473,12 +490,16 @@ br {
     z-index: -1;
     background: url("/resources/assets/GradientRectangle3.jpg") 0 0 repeat;
     transform: rotate(0deg);
-    scale: 2.1;
+
+    transition: all 1s ease;
+    scale: 1.55
   }
 
 #three:hover:before {
     transform: rotate(30deg);
     animation: spin 5.0s linear normal infinite;
+    scale: 2.1;
+
 }  
 
 #four {
@@ -496,13 +517,17 @@ br {
     z-index: -1;
     background: url("/resources/assets/GradientRectangle2.jpg") 0 0 repeat;
     transform: rotate(0deg);
-    scale: 2.1;
+
+    transition: all 1s ease;
+    scale: 1.55
   }
 
 
   #four:hover:before {
     transform: rotate(30deg);
     animation: spin 5.0s linear normal infinite;
+    scale: 2.1;
+
   }
 
 #five {
@@ -780,34 +805,50 @@ br {
     }
 }
 
-@media only screen and (max-width: 430px) {
-    .nav_button ul {
-        margin-left: 0px;
+@media only screen and (max-width: 757px) {
+    #professional_background {
+        height: 1080px;
     }
+
+    #other_stuff_background {
+        height: 780px;
+    }
+}
 
 @media only screen and (max-width: 700px) {
     #initialtask_question {
         left:0%;
     }
-}
 
-    #professional {
-        background-color: #c6d3ff;
-        border-radius: 0px;
-        padding: 50px;
-        margin: 200px -24px 0px -24px;
-        /* width: 100%; */
+    .cards {
         position: relative;
-        /* right: 24px; */
-        min-height: min-content;
-    }
-
-    #professional_cards {
-        position: relative;
-        bottom: 200px;
         margin-left: 0px;
     }
 }
+
+@media only screen and (max-width: 430px) {
+    .nav_button ul {
+        margin-left: 0px;
+    }
+
+    #professional_background {
+        border-radius: 0px;
+        height: 1050px;
+        padding: 50px 24px 0px 24px;
+    }
+
+    #other_stuff_background {
+        border-radius: 0px;
+        padding: 50px 24px 0px 24px;
+    }
+    .projects_section {
+        border-radius: 0px;
+        padding: 50px 24px 0px 24px;
+        margin: 200px -24px 0px -24px;
+        position: relative;
+    }
+}
+
 
 /*Thrivent Page*/
 
