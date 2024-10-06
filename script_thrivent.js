@@ -1,4 +1,4 @@
-    // Moving before and after images
+// Moving before and after images
 document.getElementById('after1').addEventListener('mouseover', growAfter.bind(null, "1"));
 document.getElementById('after2').addEventListener('mouseover', growAfter.bind(null, "2"));
 document.getElementById('after3').addEventListener('mouseover', growAfter.bind(null, "3"));
@@ -139,4 +139,3 @@ function hideHeader2(evt) {
     document.getElementById('navTwoOptions').style.zIndex = "-1";
     document.getElementById('navTwoOptions').style.transform = "translateY(-10px)";
     }
-
