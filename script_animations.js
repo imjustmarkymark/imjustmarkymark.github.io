@@ -63,3 +63,17 @@ function hideHeader2(evt) {
     document.getElementById('navTwoOptions').style.zIndex = "-1";
     document.getElementById('navTwoOptions').style.transform = "translateY(-10px)";
     }
+
+// Lightbox
+// import Lightbox from 'bs5-lightbox';
+
+// const options = {
+// 	keyboard: true,
+// 	size: 'fullscreen'
+// };
+
+// document.querySelectorAll('.my-lightbox-toggle').forEach((el) => el.addEventListener('click', (e) => {
+// 	e.preventDefault();
+// 	const lightbox = new Lightbox(el, options);
+// 	lightbox.show();
+// }));
