@@ -9,7 +9,7 @@ function growAfter(num) {
     // Grow after section
     // console.log("worked");
     document.getElementById('after' + num).style.transition = "all .5s ease";
-    document.getElementById('after' + num).style.top = "24px";
+    document.getElementById('after' + num).style.top = "48px";
     document.getElementById('after' + num).style.rotate = "0deg";
     document.getElementById('after' + num).style.right = "0%";
     document.getElementById('after' + num).style.scale = "100%";
