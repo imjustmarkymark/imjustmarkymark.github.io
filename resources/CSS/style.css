@@ -129,7 +129,7 @@ strong {
 }
 
 a {
-    cursor: initial;
+    cursor: pointer;
 }
 
 p a:hover {
@@ -944,7 +944,7 @@ nav {
     box-shadow: none;
 }
 
-.slide {
+/* .slide {
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -953,7 +953,7 @@ nav {
     padding: 3px 20px;
     font-size: 0px;
     opacity: 0.25;
-}
+} */
 
 .slide_wrapper {
     margin: 0 auto;
