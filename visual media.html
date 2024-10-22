@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/resources/CSS/style.css" type="text/css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>        
+        <!-- Rive -->
+        <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+        <!-- Bodymovin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/une5rut.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, min-scale=1">
+        <title>Mark's Portfolio | Visual Media</title>
+        <link rel="icon" type="image/png" href="./resources/assets/meardon_logo.png"/>
+    </head>
+    <body>
+        <header id="nav_header">
+            <ul class="header_ul">
+                <li><a id = "nav_home" href="index.html">Home</a></li>
+                <li><a id="nav_contact" href="https://www.linkedin.com/in/mark-meardon-a65a7310b/" target="_blank">LinkedIn <span class="fa">external-link</span></a></li>
+            </ul>
+        </header>
+        <!-- Navigation -->
+        <nav>
+            <div id = "navOneHeader" class = "nav_button">
+                <button><d1>Other Cool Stuff</d1><img src = "./resources/assets/Dropdown.svg"></button>
+                <ul id = "navOneOptions">
+                    <li><a href="thrivent.html"><d1>Professional</d1></a></li>
+                    <li><a href = "visual media.html"><d1>Other Cool Stuff</d1></a></li>
+
+                </ul>
+                <br>
+            </div>
+            <!-- <div id = "navTwoHeader" class = "nav_button"> -->
+                <d2>Visual Media</d2>
+                <br></br>
+            <!-- </div> -->
+        </nav>
+        <!-- Gallery -->
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-sm-12 col-md-6 col-lg-6"><iframe src="https://youtube.com/embed/yjBPuLhirKo" frameborder="0" class="gallery-img"></iframe></div> -->
+                <!-- Personal Videos -->
+                 <h1>Videos</h1>
+                <div class="col-sm-12 col-md-6 col-lg-6 gallery_margin">
+                    <div class="vid-img">
+                        <iframe src="https://player.vimeo.com/video/1017283550?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" class="iframe-img" title="Bread Party VJ Highlight Reel">
+                        </iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <p>A quick sample of some videos I created for a upcoming start-up. I created a series of different background, foreground, and text effects in Blender and Resolume, and set each layer to procedurally change, so the visuals were constantly changing over several hours.</p></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 gallery_margin">
+                    <div class="vid-img">
+                        <iframe width="560" height="315" class="iframe-img" src="https://www.youtube.com/embed/tDBxLbji930?si=1oyF83nvadzhArMv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>I filmed and editted this live performance of an Oakland/San Francsico-based band Arts & Crafts.</p></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 gallery_margin">
+                    <div class="vid-img">
+                        <iframe width="560" height="315" class="iframe-img" src="https://www.youtube.com/embed/9xvfLsxI6Is?si=ZuhIhCWpRmfjh83T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <P>A short documentary about an individual faced with adversity in San Francisco.</P>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 gallery_margin">
+                    <div class="vid-img">
+                        <iframe width="560" height="315" class="iframe-img" src="https://www.youtube.com/embed/WfgLGOuQP9Q?si=qKiEEi5i4tvLeEvf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p>A short documentary about step culture at Black Greek-Lettered Organizations, or historically black fraternities and sororities.</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 gallery_margin">
+                    <video controls src="resources/assets/freelance/other_stuff/Tongues_final.mp4" class="gallery-img"></video>
+                    <p>A fun, if not a tad disturbing, 3D render.</p>
+                </div>
+                <!-- Thrivent -->
+                <h1>Work animations</h1>
+                <div class="col-sm-12 col-md-6 col-lg-6 gallery_margin">
+                    <div id="loading_animation"></div>
+                    <p>A loading indicator animated in Adobe After Effects and exported to a web-friendly JSON format.</p>
+                    <script>
+                        var animation = bodymovin.loadAnimation({
+                            container: document.getElementById('loading_animation'),
+                            path: 'resources/assets/freelance/other_stuff/animateloading1.json',
+                            render: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            name: 'Thrivent Loading Animation'
+                        })
+                    </script>
+                </div>
+                
+                
+                <div class="col-sm-12 col-md-6 col-lg-6 gallery_margin">
+                    <img src="resources/assets/freelance/other_stuff/thrivent_logo.gif" class="gallery-img" id="center_success">
+                    <p>Animation created in Adobe After Effects.</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 gallery_margin"><img src="resources/assets/freelance/other_stuff/Loader - fingers.gif" class="gallery-img">
+                    <p>Waiting animation created in Adobe After Effects.</p></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 gallery_margin"><canvas id="canvas" width="500" height="500"></canvas>
+                <p>Interactive animation created in Rive, a motion design program for web-development.</p></div>
+                <script>
+                    const r = new rive.Rive({
+                        src: "resources/assets/freelance/other_stuff/button_test2.riv",
+                        canvas: document.getElementById("canvas"),
+                        autoplay: true,
+                        stateMachines: "State Machine 1",
+                    });
+                </script>
+                    <!-- Posters -->
+                <h1>Posters</h1>
+                <p>I created posters for a series of independent short films.</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 gallery_margin"><a href="resources/assets/freelance/other_stuff/Affection_poster.png" data-toggle="lightbox" data-caption="This describes the image"><img src="resources/assets/freelance/other_stuff/Affection_poster.png" class="gallery-img"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 gallery_margin"><a href="resources/assets/freelance/graphic_design/AStoryRevealed_poster2.jpg" data-toggle="lightbox"><img src="resources/assets/freelance/graphic_design/AStoryRevealed_poster2.jpg" class="gallery-img"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 gallery_margin"><img src="resources/assets/freelance/other_stuff/Clock-Boy_poster.jpg" class="gallery-img"></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 gallery_margin"><img src="resources/assets/freelance/other_stuff/The_Rehearsal_poster.jpg" class="gallery-img"></div>
+                <!-- Album Cover -->
+                <h1>Album Artwork</h1>
+                <p>I made this album artwork for a musician's top film score songs.</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 gallery_margin"><img src="resources/assets/freelance/other_stuff/Early Shorts.png" class="gallery-img"></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 gallery_margin"><img src="resources/assets/freelance/other_stuff/EarlyShorts_disc.jpg" class="gallery-img"></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 gallery_margin"><img src="resources/assets/freelance/other_stuff/EarlyShorts_TrayCardOutside_square.jpg" class="gallery-img"></div>
+            </div>
+        </div>
+        <div class="footer"></div>
+        <script src = "./script_animations.js"></script>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+</html>
