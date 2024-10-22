@@ -55,13 +55,13 @@ d2 {
 
 h1 {
     font-size: 31px;
-
     font-stretch: normal;
 
     font-family: "roca", sans-serif;
     font-weight: 800;
     font-style: normal;
-    
+    line-height: 1 !important;
+    margin-bottom: 0 !important;
 }
 
 h2 {
@@ -763,6 +763,10 @@ nav {
 }
 
 /* Animations page */
+
+.row p {
+    margin: 0 0 2rem 0 !important;
+}
 
 .gallery {
     /* align-items: center; */
