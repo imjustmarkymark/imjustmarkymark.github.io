@@ -667,6 +667,10 @@ nav {
     text-decoration: none;
 }
 
+#navTwoOptions {
+    max-width: 100px;
+
+}
 
 #navTwoOptions li, #navTwoOptions a{
     list-style: none;
@@ -1059,8 +1063,8 @@ nav {
         gap: 8px;
     }
 
-    .scroll-container img {
-        /* visibility: hidden; */
+    .list p {
+        font-size: 14px;
     }
 
 
@@ -1070,13 +1074,15 @@ nav {
 
     #professional_background {
         border-radius: 0px;
+        /* padding: 50px 24px 0px 24px; */
+        margin: -50px -24px 0px -24px;
         height: 1050px;
-        padding: 50px 24px 0px 24px;
     }
 
     #other_stuff_background {
         border-radius: 0px;
-        padding: 50px 24px 0px 24px;
+        /* padding: 50px 24px 0px 24px; */
+        margin: -50px -24px 0px -24px;
         height: 400px;
     }
     .projects_section {
@@ -1084,6 +1090,10 @@ nav {
         padding: 50px 24px 0px 24px;
         margin: 200px -24px 0px -24px;
         position: relative;
+    }
+
+    .text_image_background {
+        border-radius: 0;
     }
 }
 
@@ -1095,20 +1105,12 @@ nav {
 }
 
 .text_image_background {
-    margin: 0em -20em;
-    padding: 40px 20em;
+    padding: 40px;
+    border-radius: 12px;
     /* background-color: #7C4BEF; */
     background: url("/resources/assets/GradientRectangle1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-
-}
-
-.intro_video div {
-
-    gap: 40px;
-    /* padding-top: 24px; */
-  
 }
 
 .intro_video d2, .intro_video p {
@@ -1392,7 +1394,7 @@ width: 100%;
 
 
 .example_text {
-    width: 500px;
+    max-width: 500px;
     padding-top: 16px;
     transition: all .25s ease .25s;
 }
