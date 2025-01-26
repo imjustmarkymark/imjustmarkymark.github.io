@@ -9,10 +9,10 @@
 // }
 
 // Nav buttons
-// document.getElementById('navOneHeader').addEventListener('click', showHeader1);
-// document.addEventListener('click', hideHeader1);
-// document.getElementById('navTwoHeader').addEventListener('click', showHeader2);
-// document.addEventListener('click', hideHeader2);
+document.getElementById('navOneHeader').addEventListener('click', showHeader1);
+document.addEventListener('click', hideHeader1);
+document.getElementById('navTwoHeader').addEventListener('click', showHeader2);
+document.addEventListener('click', hideHeader2);
 
 function showHeader1() {
     document.getElementById('navOneOptions').style.opacity = "1";
