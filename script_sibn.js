@@ -1,12 +1,12 @@
 // Frodo Hover easter egg
-document.getElementById('frodoText').addEventListener("mouseover", frodoIn);
-document.getElementById('frodoText').addEventListener("mouseout", frodoOut);
-function frodoIn() {
-       document.getElementById('frodo').style.visibility = "visible";
-}
-function frodoOut() {
-       document.getElementById('frodo').style.visibility = "hidden";
-}
+// document.getElementById('frodoText').addEventListener("mouseover", frodoIn);
+// document.getElementById('frodoText').addEventListener("mouseout", frodoOut);
+// function frodoIn() {
+//        document.getElementById('frodo').style.visibility = "visible";
+// }
+// function frodoOut() {
+//        document.getElementById('frodo').style.visibility = "hidden";
+// }
 
 // Nav buttons
 document.getElementById('navOneHeader').addEventListener('click', showHeader1);
