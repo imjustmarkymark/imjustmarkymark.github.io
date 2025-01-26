@@ -1517,7 +1517,7 @@ width: 100%;
         float: right !important;
         display:block !important;
         opacity: 100 !important;
-        text-align: end !important;
+        text-align: start !important;
         padding-bottom: 80px !important;
     }
 }
