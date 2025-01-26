@@ -1082,11 +1082,7 @@ nav {
         max-height: 500px;
     }
 }
-@media only screen and (max-width: 500px) {
-    #other_stuff_background {
-        height:500px;
-        }
-}
+
 
 @media only screen and (max-width: 767px) {
     #center_success {
@@ -1104,6 +1100,13 @@ nav {
     #initialtask_question {
         left:0%;
     }
+}
+
+
+@media only screen and (max-width: 500px) {
+    #other_stuff_background {
+        height:500px;
+        }
 }
 
 @media only screen and (max-width: 430px) {
@@ -1419,7 +1422,6 @@ width: 100%;
     box-shadow: 0px 0px 20px -5px rgb(141, 141, 141);
     margin-top: 8px;
     border-radius: 6px;
-
 }
 
 .example img {
@@ -1446,13 +1448,11 @@ width: 100%;
     scale: 40%;
 }
 
-
 .example_text {
     max-width: 500px;
     padding-top: 16px;
     transition: all .25s ease .25s;
 }
-
 
 .after_text {
     float: right;
@@ -1461,6 +1461,67 @@ width: 100%;
     text-align: end;
     padding-bottom: 80px;
 }
+
+@media only screen and (max-width: 537px) {
+    .example {
+        text-align: center;
+        width: 100%;
+        padding-top: 24px;
+    }
+
+    .example_img_wrapper {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px -5px rgb(141, 141, 141);
+        margin-top: 8px;
+        border-radius: 6px;
+    }
+
+    .example img {
+        height: 100%;
+        width: auto;
+    }
+
+    .before {
+        position: relative;
+        z-index: 1;
+        rotate: 0deg !important;
+        scale: 1 !important;
+        right: 0 !important;
+        
+    }
+
+    #before1 {
+        position: relative;
+    }
+
+    .after {
+        position:relative !important;
+        z-index: 0 !important;
+        top: 0 !important;
+        bottom: 0px !important;
+        rotate: 0deg !important;
+        right: 0% !important;
+        scale: 100% !important;
+    }
+
+    .example_text {
+        max-width: 500px;
+        padding-top: 16px;
+        transition: all .25s ease .25s;
+    }
+
+    .after_text, .before_text {
+        float: right !important;
+        display:block !important;
+        opacity: 100 !important;
+        text-align: end !important;
+        padding-bottom: 80px !important;
+    }
+}
+
 
 /* Thrivent results section */
 .results_wrapper {
