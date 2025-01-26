@@ -159,37 +159,87 @@ icon {
     position: fixed;
     box-sizing: content-box;
     top: 0;
-    width: 90%;
+    width: 90vw;
     max-width: 1200px;
     height: 48px;
     margin-left: -99rem;
     padding-left: 99rem;
     margin-right: -99rem;
     padding-right: 99rem;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background-color: inherit;
     z-index: 100;
 }
 
+#nav_header a, #nav_header button{
+    font-family: 'roca', sans-serif;
+    font-size: 15px;
+}
+
 .header_ul {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header_ul li {
     display: inline;
+    flex-grow: 1;
+    padding-top: 0;
+    text-align: center;
 }
 
 .header_ul a {
-    top: 16px;
     color: black;
     cursor: pointer;
     text-decoration: none;
+    position: relative;
 }
 
 .header_ul a:hover {
     text-decoration: underline;
     color: black;
+}
+
+.prof_dropdown {
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;  
+    cursor:default  !important; 
+}
+
+.prof_dropdown_content {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    /* top: 48px; */
+    min-width: 150px;
+    width: 25vw;
+    background-color: #F2E9E6;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px 0px;
+    z-index: 0;
+    transition: all .3s ease, 300ms;
+}
+
+.prof_dropdown_content a {
+    float: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: center;
+}
+
+.prof_dropdown_content a:hover {
+    background:#d6cecb;
+}
+
+.dropdown:hover .prof_dropdown_content {
+    display: block;
+    overflow: visible !important;
+    opacity: 100;
+
 }
 
 #nav_home {
@@ -198,7 +248,7 @@ icon {
 
 #nav_contact {
     position: relative;
-    float: right; 
+    /* float: right;  */
     /* right: 24px;
     padding-right: 24px; */
 }
@@ -436,7 +486,8 @@ br {
 #professional_background {
     position:absolute;
     z-index: -1;
-    background-color: #424a52;
+    /* background-color: #424a52; */
+    background-color: #524e42;
     border-radius: 71px;
     height: 700px;
     width: 100%;
@@ -811,13 +862,16 @@ nav {
 }
 
 /* Professional Work */
-.brief {
-    margin-top: 48px;
-    max-width: 700px;
+#visual_media_header {
+    margin-bottom: 48px;
+}
 
-    padding: 0 24px 24px 24px;
+.brief {
+    margin-top: 108px;
+
+    padding: 48px;
     border-radius: 12px;
-    background-color: #4b3a4a;
+    background-color: #3a4b43;
 }
 
 .project_label {
@@ -829,7 +883,7 @@ nav {
     /* color: #686868; */
 }
 
-.brief p {
+.brief p, .brief h3, .brief d1 {
     color: #FFF;
 }
 .professional_section {
