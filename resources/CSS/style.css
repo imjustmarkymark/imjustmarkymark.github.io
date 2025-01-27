@@ -205,6 +205,10 @@ icon {
     color: black;
 }
 
+.header_ul img {
+    width: 12px;
+}
+
 .dropdown {
     height: inherit;
 }
@@ -257,6 +261,8 @@ icon {
     /* right: 24px;
     padding-right: 24px; */
 }
+
+
 
 /* Bio + Name */
 
@@ -1495,11 +1501,17 @@ width: 100%;
     .experience {
         border-radius: 0;
         margin: 200px -24px 0 -24px;
+        padding: 16px;
     }    
 
     .list .scroll-container {
         grid-template-columns: min-content 90% 0px min-content 90% 0px min-content 90% 0px min-content 90% 0px min-content 90% 0px min-content 90% 0px;
         gap: 8px;
+    }
+
+    #scroll_track {
+        bottom: 24px;
+        margin: 0 16px 0 16px;
     }
 
     .list p {
