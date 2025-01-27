@@ -1,18 +1,14 @@
-// Frodo Hover easter egg
-// document.getElementById('frodoText').addEventListener("mouseover", frodoIn);
-// document.getElementById('frodoText').addEventListener("mouseout", frodoOut);
-// function frodoIn() {
-//        document.getElementById('frodo').style.visibility = "visible";
-// }
-// function frodoOut() {
-//        document.getElementById('frodo').style.visibility = "hidden";
-// }
+// Make dropdown proper size
+var dropdown_content = document.getElementById("dropdown_content");
+var dropdownLabel_width = document.getElementById("dropdownLabel").offsetWidth;
 
-// Nav buttons
-document.getElementById('navOneHeader').addEventListener('click', showHeader1);
-document.addEventListener('click', hideHeader1);
-document.getElementById('navTwoHeader').addEventListener('click', showHeader2);
-document.addEventListener('click', hideHeader2);
+function equateDropdown() {
+    dropdownLabel_width = document.getElementById("dropdownLabel").offsetWidth;
+    dropdown_content.style.transition = "none";
+    dropdown_content.style.width = dropdownLabel_width + "px";
+}
+
+document.getElementById('dropdownLabel').addEventListener('mouseover', equateDropdown);
 
 function showHeader1() {
     document.getElementById('navOneOptions').style.opacity = "1";

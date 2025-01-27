@@ -1,3 +1,15 @@
+// Make dropdown proper size
+var dropdown_content = document.getElementById("dropdown_content");
+var dropdownLabel_width = document.getElementById("dropdownLabel").offsetWidth;
+
+function equateDropdown() {
+    dropdownLabel_width = document.getElementById("dropdownLabel").offsetWidth;
+    dropdown_content.style.transition = "none";
+    dropdown_content.style.width = dropdownLabel_width + "px";
+}
+
+document.getElementById('dropdownLabel').addEventListener('mouseover', equateDropdown);
+
 // Moving before and after images
 document.getElementById('after1').addEventListener('mouseover', growAfter.bind(null, "1"));
 document.getElementById('after2').addEventListener('mouseover', growAfter.bind(null, "2"));
@@ -79,12 +91,6 @@ function growBefore(num) {
         setTimeout("document.getElementById('text_before" + num + "').style.opacity = '1';", 300);
         }
 }
-
-// Move example text for static view in mobile
-// var text = document.getElementById('text_before1');
-// var gif = document.getElementById('after1');
-// var parent = text.parentNode;
-// parent.insertBefore(text, gif);
 
 
 document.addEventListener('scroll', addShadow);

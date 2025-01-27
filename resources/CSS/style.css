@@ -1473,6 +1473,10 @@ width: 100%;
         width: 100%;
         padding-top: 24px;
     }
+    
+    .centered_text p2{
+        display: none;
+    }
 
     .example_img_wrapper {
         width: 100%;
@@ -1554,6 +1558,10 @@ width: 100%;
     position: relative;
 
     bottom: 16px;
+}
+
+#ces_result d1, #ces_result h2 {
+    display: inline;
 }
 
 /*Screen Size*/

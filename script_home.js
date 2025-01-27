@@ -14,19 +14,14 @@ function addShadow() {
     }
 }
 
+// Make dropdown proper size
 var dropdown_content = document.getElementById("dropdown_content");
 var dropdownLabel_width = document.getElementById("dropdownLabel").offsetWidth;
 
 function equateDropdown() {
-    // dropdown_content.offsetWidth = dropdownLabel_width;
     dropdownLabel_width = document.getElementById("dropdownLabel").offsetWidth;
     dropdown_content.style.transition = "none";
     dropdown_content.style.width = dropdownLabel_width + "px";
-    console.log(dropdown_content.offsetWidth);
-    console.log(dropdownLabel_width);
 }
 
 document.getElementById('dropdownLabel').addEventListener('mouseover', equateDropdown);
-// window.addEventListener('resize', equateDropdown);
-
-// equateDropdown();

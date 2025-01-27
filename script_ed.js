@@ -1,14 +1,14 @@
-// Jack Nicholson easter egg
-// document.getElementById('jackieText').addEventListener("mouseover", jackieIn);
-// document.getElementById('jackieText').addEventListener("mouseout", jackieOut);
+// Make dropdown proper size
+var dropdown_content = document.getElementById("dropdown_content");
+var dropdownLabel_width = document.getElementById("dropdownLabel").offsetWidth;
 
-// function jackieIn() {
-//        document.getElementById('jackie').style.visibility = "visible";
-// }
+function equateDropdown() {
+    dropdownLabel_width = document.getElementById("dropdownLabel").offsetWidth;
+    dropdown_content.style.transition = "none";
+    dropdown_content.style.width = dropdownLabel_width + "px";
+}
 
-// function jackieOut() {
-//        document.getElementById('jackie').style.visibility = "hidden";
-// }
+document.getElementById('dropdownLabel').addEventListener('mouseover', equateDropdown);
 
 // Header Shadow
 document.addEventListener('scroll', addShadow);
