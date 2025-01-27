@@ -36,40 +36,40 @@ function showHeader1() {
     document.getElementById('navOneOptions').style.transform = "translateY(0px)";
 }
 
-function hideHeader1(evt) {
-    var clickIn = document.getElementById('navOneHeader');
-    targetElement = evt.target;
+// function hideHeader1(evt) {
+//     var clickIn = document.getElementById('navOneHeader');
+//     targetElement = evt.target;
 
-    do {
-        if (targetElement == clickIn) {
-            return;
-        }
-        targetElement = targetElement.parentNode;
-    } while (targetElement);
+//     do {
+//         if (targetElement == clickIn) {
+//             return;
+//         }
+//         targetElement = targetElement.parentNode;
+//     } while (targetElement);
     
-    document.getElementById('navOneOptions').style.opacity = "0";
-    document.getElementById('navOneOptions').style.zIndex = "-1";
-    document.getElementById('navOneOptions').style.transform = "translateY(-10px)";
-    }
+//     document.getElementById('navOneOptions').style.opacity = "0";
+//     document.getElementById('navOneOptions').style.zIndex = "-1";
+//     document.getElementById('navOneOptions').style.transform = "translateY(-10px)";
+//     }
 
-function showHeader2() {
-    document.getElementById('navTwoOptions').style.opacity = "1";
-    document.getElementById('navTwoOptions').style.zIndex = "1";
-    document.getElementById('navTwoOptions').style.transform = "translateY(0px)";
-}
+// function showHeader2() {
+//     document.getElementById('navTwoOptions').style.opacity = "1";
+//     document.getElementById('navTwoOptions').style.zIndex = "1";
+//     document.getElementById('navTwoOptions').style.transform = "translateY(0px)";
+// }
 
-function hideHeader2(evt) {
-    var clickIn = document.getElementById('navTwoHeader');
-    targetElement = evt.target;
+// function hideHeader2(evt) {
+//     var clickIn = document.getElementById('navTwoHeader');
+//     targetElement = evt.target;
 
-    do {
-        if (targetElement == clickIn) {
-            return;
-        }
-        targetElement = targetElement.parentNode;
-    } while (targetElement);
+//     do {
+//         if (targetElement == clickIn) {
+//             return;
+//         }
+//         targetElement = targetElement.parentNode;
+//     } while (targetElement);
     
-    document.getElementById('navTwoOptions').style.opacity = "0";
-    document.getElementById('navTwoOptions').style.zIndex = "-1";
-    document.getElementById('navTwoOptions').style.transform = "translateY(-10px)";
-    }
+//     document.getElementById('navTwoOptions').style.opacity = "0";
+//     document.getElementById('navTwoOptions').style.zIndex = "-1";
+//     document.getElementById('navTwoOptions').style.transform = "translateY(-10px)";
+//     }
