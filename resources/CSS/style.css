@@ -264,6 +264,7 @@ icon {
     width: 90%;
     margin: auto 5%;
     max-height: 500px;
+    mix-blend-mode: multiply;
 }
 
 .intro {
@@ -973,8 +974,6 @@ nav {
     position: relative;
     box-shadow: 0px 0px 15px 0px #00000040;
     margin: 0 auto -4px auto;
-    /* border: 10px solid #ffffff; */
-    /* border-radius: 20px; */
 }
 
 .siema2 img, .siema1 img, .siema4 img {
@@ -984,6 +983,11 @@ nav {
     box-shadow: 0px 0px 15px 0px #00000040;
     border-radius: 7px;
     display: block;
+}
+
+/* Added because of broken iOS */
+.siema2 img {
+
 }
 
 .siema3 img{
@@ -1071,93 +1075,6 @@ nav {
     }
 }
 
-@media only screen and (max-width: 757px) {
-
-
-    .cards {
-        position: relative;
-        margin-left: 0px;
-    }
-
-    .siema1 img, .siema2 img, .siema3 img, .siema4 img {
-        box-shadow: none;
-    }
-
-    .siema1 img{
-        max-height: 500px;
-    }
-}
-
-
-@media only screen and (max-width: 767px) {
-    #center_success {
-        margin: 0;
-    }
-}
-
-@media only screen and (max-width: 707px) {
-    #professional_background {
-        height: 1080px;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    #initialtask_question {
-        left:0%;
-    }
-}
-
-
-@media only screen and (max-width: 500px) {
-    #other_stuff_background {
-        height:500px;
-        }
-}
-
-@media only screen and (max-width: 430px) {
-    .experience {
-        border-radius: 0;
-        margin: 200px -24px 0 -24px;
-    }    
-
-    .list .scroll-container {
-        grid-template-columns: min-content 90% 0px min-content 90% 0px min-content 90% 0px min-content 90% 0px min-content 90% 0px min-content 90% 0px;
-        gap: 8px;
-    }
-
-    .list p {
-        font-size: 14px;
-    }
-
-
-    .nav_button ul {
-        margin-left: 0px;
-    }
-
-    #professional_background {
-        border-radius: 0px;
-        /* padding: 50px 24px 0px 24px; */
-        margin: -50px -24px 0px -24px;
-        height: 1050px;
-    }
-
-    #other_stuff_background {
-        border-radius: 0px;
-        /* padding: 50px 24px 0px 24px; */
-        margin: -50px -24px 0px -24px;
-        height: 400px;
-    }
-    .projects_section {
-        border-radius: 0px;
-        padding: 50px 24px 0px 24px;
-        margin: 200px -24px 0px -24px;
-        position: relative;
-    }
-
-    .text_image_background {
-        border-radius: 0;
-    }
-}
 
 
 /*Thrivent Page*/
@@ -1211,7 +1128,7 @@ nav {
 
 .vid_container {
     flex-grow: 1;
-    min-width: 300px;
+    /* min-width: 300px; */
     overflow: hidden;
     border-radius: 6px;
     /* box-shadow: 0px 0px 20px -5px rgb(141, 141, 141); */
@@ -1528,6 +1445,102 @@ width: 100%;
         opacity: 100 !important;
         text-align: start !important;
         padding-bottom: 80px !important;
+    }
+}
+
+@media only screen and (max-width: 757px) {
+
+
+    .cards {
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .siema1 img, .siema2 img, .siema3 img, .siema4 img {
+        box-shadow: none;
+    }
+
+    .siema1 img{
+        max-height: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #center_success {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 707px) {
+    #professional_background {
+        height: 1080px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #initialtask_question {
+        left:0%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    #other_stuff_background {
+        height:500px;
+        }
+}
+
+@media only screen and (max-width: 430px) {
+    .experience {
+        border-radius: 0;
+        margin: 200px -24px 0 -24px;
+    }    
+
+    .list .scroll-container {
+        grid-template-columns: min-content 90% 0px min-content 90% 0px min-content 90% 0px min-content 90% 0px min-content 90% 0px min-content 90% 0px;
+        gap: 8px;
+    }
+
+    .list p {
+        font-size: 14px;
+    }
+
+
+    .nav_button ul {
+        margin-left: 0px;
+    }
+
+    #professional_background {
+        border-radius: 0px;
+        /* padding: 50px 24px 0px 24px; */
+        margin: -50px -24px 0px -24px;
+        height: 1050px;
+    }
+
+    #other_stuff_background {
+        border-radius: 0px;
+        /* padding: 50px 24px 0px 24px; */
+        margin: -50px -24px 0px -24px;
+        height: 400px;
+    }
+    .projects_section {
+        border-radius: 0px;
+        padding: 50px 24px 0px 24px;
+        margin: 200px -24px 0px -24px;
+        position: relative;
+    }
+
+    .text_image_background {
+        border-radius: 0;
+    }
+
+    #initialtask_question img {
+        width: 300px;
+    }
+
+    #initialtask_question p {
+        font-size: 14px;
     }
 }
 
