@@ -216,7 +216,7 @@ icon {
 .prof_dropdown {
     background-color: inherit;
     font-family: inherit;
-    margin: 15px 0;  
+    margin: 18px 0 0 0;  
     cursor: default  !important; 
 }
 
@@ -993,7 +993,9 @@ nav {
 
 /* Added because of broken iOS */
 .siema2 img {
-
+    max-height: 500px;
+    /* width: fit-content; */
+    max-width: 100%;
 }
 
 .siema3 img{
@@ -1015,6 +1017,10 @@ nav {
 
 #ed_siema2 img, #ed_siema3 img{
     box-shadow: none;
+}
+
+#service_design {
+    max-height: 400px;
 }
 
 /* .slide {
