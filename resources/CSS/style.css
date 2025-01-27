@@ -1619,7 +1619,7 @@ and (-webkit-device-pixel-ratio: 3) {
     }
 
     .text_image_background {
-        border-radius: 0;
+        /* border-radius: 0; */
     }
 
     #initialtask_question img {
