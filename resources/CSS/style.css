@@ -1200,9 +1200,6 @@ width: 100%;
     /* width: fit-content; */
 }
 
-.initialtask_container img {
-    filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.04));
-}
 
 .initialtask_topline {
     position:relative;
@@ -1211,6 +1208,8 @@ width: 100%;
     border-radius: 7px;
     width:fit-content;
     margin: 0 auto;
+    box-shadow: 0px 0px 25px 0px #00000014;
+    z-index: 1;
     /* height: 200px; */
 }
 
@@ -1219,20 +1218,12 @@ width: 100%;
     height: 300px; */
 }
 
-/* .h1_background {
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    width: 91%;
-} */
 
 #initialtask_question {
     width: fit-content;
     animation: question 2.0s ease-in-out alternate infinite;
     position: relative;
     margin: auto;
-    z-index: -1;
-    /* bottom: 30px; */
 }
 
 #initialtask_question p {
@@ -1257,7 +1248,7 @@ width: 100%;
 
 /* Research section */
 
-#research_slides {
+.research_slides {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -1294,11 +1285,11 @@ width: 100%;
 
 /* Solution */
 
-.solution_wrapper {
+.question_wrapper {
     filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.04));
   }
 
-.solution_feature {
+.question {
 	height: 0px;
     z-index: 1;
     position: relative;
@@ -1309,45 +1300,31 @@ width: 100%;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-.solution_feature p {
+.question p {
     padding: 24px 0;
     text-align: center;
     width: 90%;
     margin: 0 auto !important;
 }
 
-#solution1 {
+#question1 {
     border-bottom: 100px solid #fff;
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
     /* bottom: 32px; */
 }
 
-#solution2 {
-    border-bottom: 100px solid #fff;
-	border-left: 25px solid transparent;
-	border-right: 15px solid transparent;
-    rotate: 175deg;
-    /* bottom: 48px; */
+.solution_feature {
+    z-index: 1;
+    position: relative;
+    width: 250px;
+    display: block;
 }
 
-#solution2 p {
-    rotate: -175deg;
-}
-
-#solution3 {
-    border-bottom: 100px solid #fff;
-	border-left: 18px solid transparent;
-	border-right: 5px solid transparent;
-    rotate: 3deg;
-    transform: skew(20deg);
-    /* bottom: 40px; */
-
-}
-
-#solution3 p {
-    rotate: -3deg;
-    transform: skew(-20deg);
+#solution_wrapper {
+    position: relative;
+    top: -12px;
+    /* width: 90vw; */
 }
 
 .centered_text {
@@ -1416,75 +1393,6 @@ width: 100%;
     text-align: end;
     padding-bottom: 80px;
 }
-
-
-/* Making the quirky-shaped rectangle svgs usable in ios: */
-/* 1179×2556 pixels at 460ppi */
-@media only screen 
-    and (width: 393px) 
-    and (height: 852px) 
-    /* and (-webkit-device-pixel-ratio: 3)  */
-    { 
-        .initialtask_topline img {
-            /* height: auto; */
-            transform: scaleY(4);
-            /* position:absolute; */
-            /* top: 60px; */
-        }
-
-        #research_slides {
-            /* position: relative; */
-            /* top: 250px; */
-        }
-
-        .h1_background {
-            /* top: 50%; */
-        }
-    }
-
-
- /* 1284×2778 pixels at 460ppi */   
-@media only screen 
-    and (width: 430px) 
-    and (height: 932px) 
-    and (-webkit-device-pixel-ratio: 3) { 
-        .initialtask_topline img {
-            transform: scaleY(4);
-        }
-    }
-
- /* 1170×2532 pixels at 460ppi: 12, 12 Pro, 13, 14 */
-@media only screen 
-and (width: 390px) 
-and (height: 844px) 
-and (-webkit-device-pixel-ratio: 3) { 
-    .initialtask_topline img {
-        transform: scaleY(4);
-    }
-}   
-
-/* 1284×2778 pixels at 458ppi 12 Pro Max, 13 Pro Max*/
-@media only screen 
-    and (width: 428px) 
-    and (height: 926px) 
-    and (-webkit-device-pixel-ratio: 3) { 
-        .initialtask_topline img {
-            transform: scaleY(4);
-        }
-}
-
-/* 1080×2340 pixels at 476ppi, minis, 11 Pro, Xs, X */
-@media only screen 
-    and (width: 375px) 
-    and (height: 812px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        .initialtask_topline img {
-            transform: scaleY(4);
-        }
-}
-
-
-
 
 @media only screen and (max-width: 537px) {
     .example {
