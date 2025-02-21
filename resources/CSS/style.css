@@ -448,7 +448,8 @@ br .entry {
 .projects_section {
     border-radius: 71px;
     padding: 50px 50px 0px 50px;
-    margin: 200px 0px 16px 0px;
+    margin: 0 auto;
+    
     max-width: 800px;
     min-height: min-content;
     z-index: -1;
@@ -478,6 +479,38 @@ br .entry {
     font-weight: 500;
 }
 
+#testimony_section {
+    margin: 144px auto 110px auto;
+    max-width: 800px;
+}
+
+.testimony_container {
+    width: 100%;
+    max-width: 500px;
+    padding-top: 24px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.testimony_items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimony_item {
+    /* min-width: 100%; */
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px;
+    margin: 0;  
+    border-radius: 12px;
+}
+
+.testimony_item h2 {
+    line-height: 1.1em;
+}
+
 #other_cool_stuff {
     /* bottom: 500px; */
 }
@@ -488,11 +521,6 @@ br .entry {
 
 br {
     height: 19px;
-}
-
-#frodo, #jackie{
-    position: absolute;
-    visibility: hidden;
 }
 
 #professional_background {
@@ -522,7 +550,11 @@ br {
     max-width: 660px;
     position: relative;
     /* bottom: 500px; */
-    margin-left: 50px;
+    margin: auto;
+}
+
+#cards_margin {
+    margin-bottom: 100px;
 }
 
 .card {
@@ -900,6 +932,8 @@ nav {
 }
 .professional_section {
     margin: 144px 0;
+    position: relative;
+
 }
 
 .professional_section img {
@@ -1490,12 +1524,19 @@ width: 100%;
     #professional_background {
         height: 1080px;
     }
+
+    #testimony_left, #testimony_right {
+        bottom: 0px;
+        top: inherit;
+    }
 }
 
 @media only screen and (max-width: 700px) {
     #initialtask_question {
         left:0%;
     }
+
+
 }
 
 
