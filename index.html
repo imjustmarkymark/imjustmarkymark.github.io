@@ -4,8 +4,13 @@
         <title>Mark's Portfolio</title>
         <link rel="icon" type="image/png" href="./resources/assets/meardon_logo.png"/>        
         <link href="./resources/CSS/style.css" type="text/css" rel="stylesheet">
+        
         <!-- Extra font: Roca and basic sans -->
         <link rel="stylesheet" href="https://use.typekit.net/une5rut.css">
+        
+        <!-- Rive -->
+        <script src="https://unpkg.com/@rive-app/webgl2"></script>
+
         <meta charset="UTF-8">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
@@ -39,7 +44,11 @@
         <div class="header_background">
             <div class= "intro">
                 <!-- <span><d2>Mark Meardon </d2><img src = "resources/animations/renders/gifGunGIFS/Comp_2.gif" alt = "Mark is multifaceted."></span> -->
-                <video id="home_video" src="resources/assets/home_bio.mp4" autoplay loop muted playsinline></video>
+                <!-- <video id="home_video" src="resources/assets/home_bio.mp4" autoplay loop muted playsinline></video> -->
+                <canvas id="ghost_canvas" width="2014" height="987"></canvas>
+                <script>
+
+                </script>
                 <br>
                 <br>
                 <br>
@@ -294,5 +303,6 @@
         </div>
         <div class="footer"></div>
         <script src = "script_home.js"></script>
+
     </body>
 </html>

@@ -86,3 +86,11 @@ function handleSwipe() {
     slidePrevious(); // Swipe right, go to the previous slide
   }
 }
+
+const r = new rive.Rive({
+  src: "resources/assets/ghost3.riv",
+  artboard: "homepage_ghost",
+  canvas: document.getElementById("ghost_canvas"),
+  autoplay: true,
+  stateMachines: "State Machine 1",
+})

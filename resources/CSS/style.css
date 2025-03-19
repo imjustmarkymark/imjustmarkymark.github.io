@@ -273,6 +273,13 @@ icon {
     mix-blend-mode: multiply;
 }
 
+#ghost_canvas {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    display: block;
+}
+
 .intro {
     max-width: 100%;
     min-width: 250px;
