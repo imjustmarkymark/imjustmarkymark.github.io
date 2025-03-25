@@ -275,7 +275,7 @@ icon {
 
 #ghost_canvas {
     width: 100%;
-    max-width: 900px;
+    /* max-width: 900px; */
     margin: auto;
     display: block;
 }
@@ -295,16 +295,9 @@ icon {
     max-width: 530px;
 }
 
-.intro d2 {
-    font-size: 50px;
-}
-
-.intro p {
+#intro-text {
     max-width: 900px;
-}
-
-.intro h1 {
-    max-width: 1000px;
+    margin:auto;
 }
 
 .intro p2 {
