@@ -88,7 +88,7 @@ function handleSwipe() {
 }
 
 const r = new rive.Rive({
-  src: "resources/assets/ghost3.riv",
+  src: "resources/assets/ghost4.riv",
   artboard: "homepage_ghost",
   canvas: document.getElementById("ghost_canvas"),
   autoplay: true,
